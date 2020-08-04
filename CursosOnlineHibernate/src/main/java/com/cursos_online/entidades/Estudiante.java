@@ -13,7 +13,7 @@ public class Estudiante {
 	private String nombre;
 	private String apellido;
 	
-	
+
 	public Estudiante(String nombre, String apellido) {
 		super();
 		this.nombre = nombre;
@@ -40,6 +40,11 @@ public class Estudiante {
 	}
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
+	}
+
+	@Override
+	public String toString() {
+		return "Estudiante [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + "]";
 	}
 	
 	
